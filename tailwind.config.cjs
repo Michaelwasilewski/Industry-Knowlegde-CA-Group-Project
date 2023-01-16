@@ -2,6 +2,13 @@
 module.exports = {
   content: ['./src/*.{html,js}', './src/js/*.js'],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     fontSize: {
       'body': ['18px', {
         lineHeight: '28px',
