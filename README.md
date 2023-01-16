@@ -32,7 +32,7 @@ This project is a group project for front-end developers in the second year at N
 1. Clone the repository to your local machine. :file_folder:
 2. Install the dependencies by running `npm install`. :package:
 3. Start the development server by running `npm start`. :rocket:
-4. Open your browser and navigate to `http://localhost:3000` to view the project. :eyes:
+4. Open your browser and navigate to `http://localhost:8080` to view the project. :eyes:
 
 ## Contributing :handshake:
 
