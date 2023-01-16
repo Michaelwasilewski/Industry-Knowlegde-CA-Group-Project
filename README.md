@@ -40,4 +40,4 @@ This project is a group project for front-end developers in the second year at N
 2. Create a new branch for your changes (e.g. `feature/my-new-feature`). :branch:
 3. Make your changes and commit them with a clear and descriptive commit message. :pencil2:
 4. Push your changes to your branch on your forked repository. :arrow_up:
-5. Create a new pull request to the original repository's `master` branch. :arrow_heading_up:
+5. Create a new pull request to the original repository's `main` branch. :arrow_heading_up:
