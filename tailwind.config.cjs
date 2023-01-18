@@ -10,6 +10,14 @@ module.exports = {
       '2xl': '1536px',
     },
     fontSize: {
+      'CtaSmall': ['14px', {
+        lineHeight: 'leading-normal',
+        fontWeight: '700',
+      }],
+      'CtaMedium': ['16px', {
+        lineHeight: 'leading-normal',
+        fontWeight: '700',
+      }],
       'body': ['18px', {
         lineHeight: '28px',
         fontWeight: '500',
