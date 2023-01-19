@@ -18,6 +18,10 @@ module.exports = {
         lineHeight: 'leading-normal',
         fontWeight: '700',
       }],
+      'grid': ['24px', {
+        lineHeight: '30px',
+        fontWeight: '600',
+      }],
       'body': ['18px', {
         lineHeight: '28px',
         fontWeight: '500',
@@ -48,7 +52,7 @@ module.exports = {
         summerYellow: '#F6A560',
         pink: '#F39E9E',
         lightRed: '#EB7565',
-        cyan: '#755CDE',
+        cyan: '#61C4B7',
         darkPurple: '#552049'
       }
     },
