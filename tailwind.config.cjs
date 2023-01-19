@@ -22,6 +22,10 @@ module.exports = {
         lineHeight: '28px',
         fontWeight: '500',
       }],
+      'mobileHeader': ['26px', {
+        lineHeight: 'leading-normal',
+        fontWeight: '700',
+      }],
       'smallHeader': ['32px', {
         lineHeight: 'leading-normal',
         fontWeight: '700',
