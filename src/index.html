@@ -13,6 +13,7 @@
     <meta name="keywords" content="web design, UX, UI, apps, motion graphics">
     <title>Portfolio</title>
     <script type="module" src="js/main.js" defer></script>
+    <script type="text/javascript" src="/js/carousel.js" defer></script>
   </head>
   <body class="bg-lightCream">
     <header class="w-11/12 max-w-[1111px] mx-auto mb-16 mt-8 flex justify-between items-end">
@@ -104,6 +105,66 @@
         <button class="bg-lightRed hover:bg-summerYellow w-44 h-11 md:w-56 md:h-14 rounded-full text-CtaSmall md:text-CtaMedium text-white mt-6">Free Consultation</button>
       </div>
     </section>
+    <h1 class="text-center mt-8 md:text-smallHeader text-mobileHeader">My Work</h1>
+    <section class="text-center mx-auto justify-center">
+      <div class="w-full overflow-hidden" id="sliderContainer">
+        <ul id="slider" class="flex w-full ">
+          <li class="p-5">
+            <div class="rounded-lg p-5">
+              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
+                   src="img/image-slide-5.jpg"
+                   alt="portfolio image one">
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="rounded-lg p-5">
+              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
+                   src="img/image-slide-4.jpg"
+                   alt="portfolio image five">
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="rounded-lg p-5">
+              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
+                   src="img/image-slide-3.jpg"
+                   alt="portfolio image six">
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="rounded-lg p-5">
+              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
+                   src="img/image-slide-2.jpg"
+                   alt="portfolio image seven">
+            </div>
+          </li>
+          <li class="w-96 p-5">
+            <div class="rounded-lg p-5">
+              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
+                   src="/img/image-slide-1.jpg"
+                   alt="portfolio image eight">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="w-2/12 flex items-center mx-auto">
+      <div class="w-full text-center">
+        <button onclick="next()" id="prev" class="p-3 rounded-full bg-black mr-2 hover:bg-purple-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="white" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="w-full text-center">
+        <button onclick="prev()" id="next" class="p-3 rounded-full bg-black ml-2 hover:bg-purple-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="white" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
     <div class="w-11/12 max-w-[1111px] mx-auto flex flex-col text-center lg:text-start lg:flex-row justify-between py-14 px-6 md:py-16 md:px-14 lg:py-20 lg:px-16 bg-standardBlack gap-6 text-white rounded-lg items-center mt-24 md:mt-28 lg:mt-20">
       <div class="lg:w-8/12 flex flex-col gap-6">
         <h2 class="text-mobileHeader md:text-smallHeader lg:text-mediumHeader">Book a call with me</h2>
