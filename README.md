@@ -26,6 +26,7 @@ This project is a group project for front-end developers in the second year at N
 - HTML :globe_with_meridians:
 - CSS(Tailwind CSS) :art:
 - JavaScript :coffee:
+- Bundle: Vite
 
 ## Getting Started :rocket:
 
