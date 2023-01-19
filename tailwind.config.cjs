@@ -18,13 +18,17 @@ module.exports = {
         lineHeight: 'leading-normal',
         fontWeight: '700',
       }],
+      'grid': ['24px', {
+        lineHeight: '30px',
+        fontWeight: '600',
+      }],
       'body': ['18px', {
         lineHeight: '28px',
         fontWeight: '500',
       }],
-      'grid': ['24px', {
-        lineHeight: '30px',
-        fontWeight: '600',
+      'mobileHeader': ['26px', {
+        lineHeight: 'leading-normal',
+        fontWeight: '700',
       }],
       'smallHeader': ['32px', {
         lineHeight: 'leading-normal',
