@@ -9,11 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="web design, UX, UI, apps, motion graphics">
     <title>Portfolio</title>
     <script type="module" src="js/main.js" defer></script>
-    <script type="text/javascript" src="/js/carousel.js" defer></script>
   </head>
   <body class="bg-lightCream">
     <header class="w-11/12 max-w-[1111px] mx-auto mb-16 mt-8 flex justify-between items-end">
@@ -109,65 +109,36 @@
         </a>
       </div>
     </section>
-    <h2 class="text-center mt-8 md:text-smallHeader text-mobileHeader">My Work</h2>
-    <section class="text-center mx-auto justify-center">
-      <div class="w-full overflow-hidden" id="sliderContainer">
-        <ul id="slider" class="flex w-full ">
-          <li class="p-5">
-            <div class="rounded-lg p-5">
-              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
-                   src="img/image-slide-5.jpg"
-                   alt="portfolio image one">
-            </div>
-          </li>
-          <li class="w-96 p-5">
-            <div class="rounded-lg p-5">
-              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
-                   src="img/image-slide-4.jpg"
-                   alt="portfolio image five">
-            </div>
-          </li>
-          <li class="w-96 p-5">
-            <div class="rounded-lg p-5">
-              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
-                   src="img/image-slide-3.jpg"
-                   alt="portfolio image six">
-            </div>
-          </li>
-          <li class="w-96 p-5">
-            <div class="rounded-lg p-5">
-              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
-                   src="img/image-slide-2.jpg"
-                   alt="portfolio image seven">
-            </div>
-          </li>
-          <li class="w-96 p-5">
-            <div class="rounded-lg p-5">
-              <img class="h-[180px] w-[270px] md:h-[360px] md:w-[540px] object-cover relative rounded-md"
-                   src="/img/image-slide-1.jpg"
-                   alt="portfolio image eight">
-            </div>
-          </li>
-        </ul>
+    <h2 class="text-center mt-8 mb-8 md:text-smallHeader text-mobileHeader">My Work</h2>
+    <div id="animation-carousel" class="relative" data-carousel="static">
+      <div class="relative h-56 overflow-hidden md:h-96">
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/img/image-slide-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain md:w-[530px] sm:w-360px" alt="portfolio image one">
+        </div>
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/img/image-slide-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain md:w-[530px] sm:w-360px" alt="portfolio image two">
+        </div>
+        <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+          <img src="/img/image-slide-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain md:w-[530px] sm:w-360px" alt="portfolio image three">
+        </div>
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/img/image-slide-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain md:w-[530px] sm:w-360px" alt="portfolio image four">
+        </div>
+        <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="/img/image-slide-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-contain md:w-[530px] sm:w-360px" alt="portfolio image five">
+        </div>
       </div>
-    </section>
-    <div class="w-2/12 flex items-center mx-auto">
-      <div class="w-full text-center">
-        <button onclick="next()" id="prev" class="p-3 rounded-full bg-black mr-2 hover:bg-purple-500">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-               stroke="white" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
-          </svg>
-        </button>
-      </div>
-      <div class="w-full text-center">
-        <button onclick="prev()" id="next" class="p-3 rounded-full bg-black ml-2 hover:bg-purple-500">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-               stroke="white" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-          </svg>
-        </button>
-      </div>
+      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black hover:bg-purple-500">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-black hover:bg-purple-500">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </span>
+      </button>
     </div>
     <div class="w-11/12 max-w-[1111px] mx-auto flex flex-col text-center lg:text-start lg:flex-row justify-between py-14 px-6 md:py-16 md:px-14 lg:py-20 lg:px-16 bg-standardBlack gap-6 text-white rounded-lg items-center mt-24 md:mt-28 lg:mt-20">
       <div class="lg:w-8/12 flex flex-col gap-6">
@@ -190,5 +161,6 @@
         <button class="bg-standardBlack hover:bg-galacticBlue text-white w-44 h-11 md:w-56 md:h-14 rounded-full text-CtaSmall md:text-CtaMedium">Free Consultation</button>
       </a>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
   </body>
 </html>
